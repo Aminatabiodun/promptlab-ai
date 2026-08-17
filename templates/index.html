@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PromptLab AI - Learn Prompting Visually</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<header class="nav"><div class="brand">Prompt<span>Lab</span><small>AI</small></div><nav><a href="#learn">Learn</a><a href="#lab">Prompt Lab</a><a href="#tips">Tips</a></nav></header>
+<main>
+<section class="hero"><div><p class="eyebrow">AI PROMPTING - VISUAL LEARNING</p><h1>See how better prompts create <span>better instructions.</span></h1><p class="lead">Learn image prompting by adding details one layer at a time and seeing how those details affect the result.</p><a class="button" href="#lab">Try the Prompt Lab ↓</a></div>
+<div class="hero-card"><div class="mini-label">PROMPT FORMULA</div><div class="formula">Subject + Setting + Style + Lighting + Composition + Details</div><div class="chips"><span>subject</span><span>style</span><span>lighting</span><span>camera</span></div></div></section>
+<section id="learn" class="section"><p class="eyebrow">THE BASICS</p><h2>Build a prompt in layers</h2><div class="cards">
+<article><b>01</b><h3>Subject</h3><p>What should appear? Be specific about the person, object, animal, or scene.</p></article>
+<article><b>02</b><h3>Context</h3><p>Describe where it is, the time of day, weather, mood, and surroundings.</p></article>
+<article><b>03</b><h3>Style</h3><p>Choose a visual direction such as 3D, cinematic, watercolor, or photorealistic.</p></article>
+<article><b>04</b><h3>Technical details</h3><p>Add lighting, camera angle, composition, depth of field, colors and quality cues.</p></article>
+</div></section>
+<section id="lab" class="section lab"><div class="lab-head"><div><p class="eyebrow">INTERACTIVE LESSON</p><h2>Prompt Lab</h2></div><span id="status" class="status">Demo mode</span></div>
+<div class="workspace"><aside class="controls"><label>Start with a subject</label><textarea id="prompt" rows="5">a young African woman</textarea>
+<div class="quick"><button data-add=", in a lush tropical garden">+ Setting</button><button data-add=", cinematic 3D style">+ Style</button><button data-add=", golden hour, warm studio lighting">+ Lighting</button><button data-add=", shallow depth of field, 85mm lens, detailed flowers">+ Camera & details</button></div>
+<div class="level"><span>Prompt strength</span><strong id="levelText">1 / 5</strong></div><button id="generate" class="button full">Generate image</button>
+<p class="hint">Add an OpenAI API key on the backend to enable real AI image generation. Without one, the visual teaching demo still works.</p></aside>
+<div class="preview"><div class="image-wrap"><img id="result" alt="Generated prompt preview"></div><div class="analysis"><h3>Why this prompt is stronger</h3><p id="explain"></p></div></div></div></section>
+<section id="tips" class="section"><p class="eyebrow">PROMPT CHECKLIST</p><h2>Think like a creative director</h2><div class="tip-grid">
+<div>🎯 <b>Be specific</b><span>Replace vague descriptions with observable details.</span></div><div>🎬 <b>Define style</b><span>Tell the model the visual direction you want.</span></div><div>💡 <b>Control lighting</b><span>Lighting changes mood, depth and color.</span></div><div>📷 <b>Guide composition</b><span>Mention framing, lens, angle or depth of field.</span></div>
+</div></section></main><footer>PromptLab AI - Learn prompting by seeing the difference.</footer>
+<script src="/static/app.js"></script></body></html>

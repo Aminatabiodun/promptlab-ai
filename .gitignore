@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+app.py.backup
+app.py.backup2
+app.py.before-cleanup
