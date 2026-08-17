@@ -49,7 +49,7 @@ btn.onclick = async () => {
     btn.textContent = "Generating...";
 
     try {
-        const response = await fetch("/api/generate", {
+        const response = await fetch("https://promptlab-ai-rhmf.onrender.com/api/generate", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -65,7 +65,6 @@ btn.onclick = async () => {
         if (!response.ok) {
             throw new Error(data.error || "Image generation failed.");
         }
-
         if (!data.image) {
             throw new Error("The server returned no image.");
         }
